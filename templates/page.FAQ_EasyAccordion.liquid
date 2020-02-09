@@ -10,7 +10,8 @@
       </header>
 
       <div class="rte rte--nomargin">
-        {% assign content = page.content | replace: '&lt;!-- acsplit --&gt;', '<!-- acsplit -->' | split: '<!-- acsplit -->' %}{% for c in content %}{% include 'product-description-slider-page' with c %}{% endfor %}
+          {% assign content = page.content | replace: '&lt;!-- acsplit --&gt;', '<!-- acsplit -->' | split: '<!-- acsplit -->' %}{% for c in content %}{% include 'product-description-slider-page' with c %}{% endfor %}
+        
       </div>
 
     </div>

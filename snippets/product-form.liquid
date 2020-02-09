@@ -98,7 +98,6 @@
   {% assign value = product.title %}
   {% assign test = product.type %}
   {% assign swatch = product.images.size | minus:3 %}
-  
         <a href="{{product.url}}">
             <!--<div class="tooltip" style="background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})">-->
             <div class="tooltip" style="background-image: url({{ product.images[swatch] | product_img_url: '200x'}}); background-size: 350%;
@@ -113,7 +112,7 @@
 </div>
 
 {% capture form_id %}AddToCartForm-{{ section_id }}{% endcapture %}
-{% form 'product', product, id: form_id, class: 'product-single__form' %}
+{% form 'product', product, id: form_id, class: 'product-single__form', type: type %}
   {% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
     {% for option in product.options_with_values %}
       {% if settings.variant_type == 'button' %}
@@ -216,3 +215,27 @@
     {{ product.variants | json }}
   </div>
 {% endform %}
+
+<script>
+  $(window).load(function(){
+    $(".product-single__form fieldset").each(function(){
+      let fieldName = $(this).attr('name');
+      let id = $(this).attr('id');
+      let preValue = localStorage.getItem(fieldName);
+      $("input:radio[name='" + fieldName + "']").filter("[value='" + preValue + "']").click();
+      console.log(preValue);
+      // var value = $("#" + id + " :radio:checked").val();
+      // console.log(value);
+    });
+  });
+//   $.getJSON("https://api.ipify.org/?format=json", function(e) {
+//     console.log(e.ip);
+// });
+  $(".product-single__form fieldset").change(function(){
+    let fieldName = $(this).attr('name');
+    let id = $(this).attr('id');
+    var value = $("#" + id + " :radio:checked").val();
+    localStorage.setItem(fieldName, value);
+    console.log(value);
+  });
+</script>

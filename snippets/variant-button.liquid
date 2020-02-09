@@ -76,7 +76,18 @@
 {%endif%}
 {% if downcased_option contains 'size' or downcased_option contains 'pant waist' %}
   {% assign count = product.images.size | minus:2 %}
-	<a data-fancybox="size-chart" href="{{ product.images.last | product_img_url: 'master' }}"><h4><i class="fas fa-info-circle"></i>Size Chart</h4></a>
+	<a class="hide-size" data-fancybox="size-chart" href="{{ product.images.last | product_img_url: 'master' }}"><h4><i class="fas fa-info-circle"></i>Size Chart</h4></a>
 {%endif%}
   
 </div>
+<script>
+  $(window).scroll(function(){
+    if($(window).width() < 560) {
+      if($("body").hasClass("fancybox-active")){
+        $(".fancybox-button--close").click(); 
+      }
+    }
+    
+  });
+</script>
+

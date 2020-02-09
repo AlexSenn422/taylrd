@@ -170,6 +170,9 @@
   {% endfor %}
 </ul>
 <style>
+  .site-nav__dropdown {
+    z-index: 30;
+  }
   .featured-nav-1 {
     background-image: url({{ section.settings.featured_bg_1 | img_url: '400x' }});
   }
