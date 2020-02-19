@@ -195,77 +195,9 @@
 <!-- ATTENTIVE END -->
   
 <script async type="text/javascript" data-api-key="pubkey-R3J9wJSA5r274R1Rxt7B3vC58DwL50" id="stamped-script-widget" src="https://cdn2.stamped.io/files/widget.min.js"></script>
+<script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} window.KlarnaThemeGlobals.data_purchase_amount={{product.first_available_variant.price}};window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
 </body>
 </html>
 
-<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.1) -->
 
-<script type="text/javascript">
-  // Editable fields:
-  var afterpay_min = 0.04;            // As per your Afterpay contract.
-  var afterpay_max = 1000.00;         // As per your Afterpay contract.
-  var afterpay_logo_theme = 'colour'; // Can be 'colour', 'black' or 'white'.
-
-  // Overrides:
-  var afterpay_product_selector = '.product__price-savings';
-  // var afterpay_cart_integration_enabled = true;
-  // var afterpay_cart_static_selector = '#cart-subtotal-selector';
-  // var afterpay_variable_price_fallback_selector = '#ProductPrice';
-  // var afterpay_variable_price_fallback = true; // Requires afterpay_product_selector
-  var afterpay_show_currency_code = false;
-  var afterpay_modal_responsive = true;
-
-  // Non-editable fields:
-  var afterpay_shop_currency = {{ shop.currency | json }};
-  var afterpay_shop_money_format = {{ shop.money_format | json }};
-  var afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};
-  var afterpay_theme_name = {{ theme.name | json }};
-  var afterpay_product = {{ product | json }};
-  var afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};
-  var afterpay_cart_total_price = {{ cart.total_price | json }};
-  var afterpay_js_snippet_version = '1.0.1';
-</script>
-
-<script type="text/javascript" src="https://static.afterpay.com/shopify-afterpay-javascript.js"></script>
-
-<!-- End Shopify-Afterpay JavaScript Snippet (v1.0.1) -->
-
-<style type="text/css">
-  p.afterpay-paragraph {
-    color: inherit !important;
-    font-family: inherit !important;
-  }
-
-  .afterpay-instalments {
-    font-weight: bold !important;
-  }
-
-  .afterpay-link-inner {
-    font-size: 12px;
-    margin-left: 2px;
-  }
-
-  .afterpay-logo {
-    width: 6em !important;
-    height: auto !important;
-  }
-
-  .afterpay-text2 {
-    margin-right: 1px;
-  }
-
-  @media only screen and (max-width : 480px) {
-    .afterpay-paragraph {
-        font-size: 12px;
-    }
-
-    .afterpay-link-inner {
-        font-size: 12px;
-    }
-
-    .afterpay-logo {
-/*       width: 6em !important;
-      height: auto !important; */
-    }
-  }
 </style>

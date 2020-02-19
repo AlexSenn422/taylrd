@@ -507,18 +507,36 @@
               "image": "shopify:\/\/shop_images\/Hero_Tech.jpg",
               "focal_point": "20% 50%"
             }
+          },
+          "1581661804614": {
+            "type": "image",
+            "settings": {
+              "top_subheading": "",
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "shopify:\/\/collections\/final-sale",
+              "link_text": "",
+              "link_2": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/Inventory_Close_Out_web_banner_1.jpg",
+              "focal_point": "center center"
+            }
           }
         },
         "block_order": [
+          "1581661804614",
           "1557183205246"
         ],
         "settings": {
-          "section_height": "750px",
-          "mobile_height": "auto",
+          "section_height": "natural",
+          "mobile_height": "250px",
           "parallax": false,
           "style": "dots",
-          "autoplay": false,
-          "autoplay_speed": 8
+          "autoplay": true,
+          "autoplay_speed": 10
         }
       },
       "collection-header": {
@@ -590,8 +608,8 @@
               "subheading": "Keep It",
               "heading": "Casual",
               "textarea": "With the flexibility of athletic pants",
-              "cta_text1": "",
-              "cta_link1": "",
+              "cta_text1": "Shop",
+              "cta_link1": "https:\/\/www.taylrdclothing.com\/collections\/all-chinos",
               "cta_text2": "",
               "cta_link2": "",
               "image": "shopify:\/\/shop_images\/Grey_Tech_Chino.jpg",
@@ -612,8 +630,8 @@
               "subheading": "While Also Perfect For",
               "heading": "Work",
               "textarea": "With the durability of office slacks",
-              "cta_text1": "",
-              "cta_link1": "",
+              "cta_text1": "Shop",
+              "cta_link1": "https:\/\/www.taylrdclothing.com\/collections\/all-chinos",
               "cta_text2": "",
               "cta_link2": "",
               "image": "shopify:\/\/shop_images\/Black_Tech_Chino.jpg",
@@ -642,8 +660,27 @@
       },
       "collection-promotions": {
         "type": "collection-promotions",
+        "blocks": {
+          "1581661982287": {
+            "type": "banner",
+            "settings": {
+              "promo_collection": "",
+              "heading": "EXTRA 70% OFF FINAL SALE",
+              "text": "CODE: 70off",
+              "link": "shopify:\/\/collections\/final-sale",
+              "label": "Shop now",
+              "image": "",
+              "color_tint": "#000",
+              "color_tint_opacity": 8,
+              "framed": false
+            }
+          }
+        },
+        "block_order": [
+          "1581661982287"
+        ],
         "settings": {
-          "gutter_size": 20
+          "gutter_size": 7
         }
       },
       "footer-promotions": {
@@ -1179,7 +1216,7 @@
             "type": "featured-collection",
             "settings": {
               "title": "BOTTOMS",
-              "collection": "final-sale-chinos",
+              "collection": "",
               "per_row": 4,
               "rows": 5,
               "view_all": true
@@ -1945,8 +1982,8 @@
             "settings": {
               "title": "",
               "collection": "tech-chino-pants",
-              "per_row": 3,
-              "rows": 3,
+              "per_row": 5,
+              "rows": 2,
               "view_all": false
             }
           },
@@ -1965,8 +2002,8 @@
             "settings": {
               "title": "",
               "collection": "tech-5-pocket-pants",
-              "per_row": 3,
-              "rows": 5,
+              "per_row": 5,
+              "rows": 2,
               "view_all": false
             }
           },
@@ -1974,7 +2011,7 @@
             "type": "rich-text",
             "settings": {
               "title": "the best pants can get.",
-              "text": "<p>We&rsquo;ve combined the comfort and flexibility of your favorite athletic pants with the durability of office slacks. Our Tech Collection features a proprietary technical fabric that is water resistant, moisture wicking, machine washable, and has four-way stretch. For the guy who wants versatility, comfort, and uncompromising style, say hello to your new favorite pair of pants.<\/p>",
+              "text": "<p>We&rsquo;ve combined the comfort and flexibility of your favorite athletic pants with the durability of office slacks. Our Tech Collection features a proprietary technical fabric that is water resistant, moisture wicking, machine washable, and has four-way stretch.&nbsp;<\/p>",
               "align_text": "center",
               "narrow_column": true,
               "enlarge_text": false
@@ -2008,12 +2045,12 @@
               "title": "FITS",
               "align_text": "center",
               "enable_image_1": true,
-              "image_1": "shopify:\/\/shop_images\/55-min.jpg",
+              "image_1": "shopify:\/\/shop_images\/TAYLRD_fit_e737e054-a3f0-43d0-83c1-2ae53b843191.jpg",
               "image_width_1": 650,
               "title_1": "Taylrd fit",
               "text_1": "<p>Our Signature Fit. Tapered from thigh through the leg down to give you the modern-day tailored look. Slimmer than our Slim Fit pants.<\/p>",
               "enable_image_2": true,
-              "image_2": "shopify:\/\/shop_images\/66-min.jpg",
+              "image_2": "shopify:\/\/shop_images\/Slim_Fit_115e056f-6161-4f6a-9b4b-4d64c802d3fa.jpg",
               "image_width_2": 650,
               "title_2": "Slim Fit",
               "text_2": "<p>Built for guys with bigger thighs. A little more room in the seat with a more subtle taper starting at the mid-thigh.&nbsp;Extra room to breathe, but won&rsquo;t ever look loose on you.<\/p>",
@@ -2030,12 +2067,12 @@
               "title": "Real Reviews",
               "align_text": "center",
               "round_images": false,
-              "testimonial_1": "<p>Perfect Fit. Tech is where it&rsquo;s at. These pants are extremely comfortable and mobile. If I could do the splits, I would be able to do them in these pants.<\/p>",
+              "testimonial_1": "<p><strong>BEST CHINOS I OWN!<\/strong><\/p>\n<p>Plain and simple: these are the best chinos I own. I love how they are flexible and stretch for a more athletic fit. Fits me perfectly and I always get compliments on them. I would highly recommend these pants to others.<\/p>",
               "image_1": "shopify:\/\/shop_images\/star-min.jpg",
-              "author_1": "Rudy K.",
-              "testimonial_2": "<p>I bought the slim fit pant and they fit perfectly. Nice lightweight feel to the fabric and the stretch is great and super comfortable. I&rsquo;ll definitely be getting a couple more colors.<\/p>",
+              "author_1": "Ryan P.",
+              "testimonial_2": "<p><strong>TECH CHINO<\/strong><\/p>\n<p>I went out on a limb buying these pants. Of course they looked great on the model in the product images and of course they read great in the product description but these pants are exactly what they say they are. I love them!<\/p>",
               "image_2": "shopify:\/\/shop_images\/star-min.jpg",
-              "author_2": "Guido V."
+              "author_2": "Jonathan M."
             }
           },
           "1556557867728": {
@@ -2043,7 +2080,7 @@
             "settings": {
               "title": "Same tech. Less Leg.",
               "collection": "tech-shorts",
-              "per_row": 4,
+              "per_row": 5,
               "rows": 2,
               "view_all": false
             }

@@ -134,22 +134,7 @@
                 </div>
               {% endif %}
               <div class="grid__item medium-up--five-twelfths text-center medium-up--text-right{% unless settings.cart_notes_enable %} medium-up--push-seven-twelfths{% endunless %}">
-                {% assign value = 7500 | minus: cart.total_price %}
-                {% if value > 0 %}
-                  {% assign percentage = 7500 | minus: cart.total_price | divided_by: 7500.0 | times: 100 %}
-                  <h3>You Are {{ cart.total_price | money }} Away from FREE SHIPPING.</h3>
-                  <div class="grid grid--full cart__row--table">
-                      <progress value="{{percentage}}" max="100" style="width:75%;"></progress>
-                      <img src="{{ 'shipping-free.png' | asset_img_url: }}" style="margin-left: 10px;" />
-                  </div>
-                {% else %}
-                  <h3>Awesome. You've got free shipping!</h3>
-                  <div class="grid grid--full cart__row--table">
-                      <progress value="100" max="100" style="width:75%;"></progress>
-                      <img src="{{ 'shipping-free.png' | asset_img_url: }}" style="margin-left: 10px;" />
-                  </div>
-                {% endif %}
-                
+                                
                 <div class="grid grid--full cart__row--table">
                   <div class="grid__item one-half medium-up--two-thirds medium-up--text-center">
                     <p class="h4 cart__subtotal">{{ 'cart.general.subtotal' | t }}</p>

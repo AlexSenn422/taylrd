@@ -67,26 +67,9 @@
       {% endraw %}{% endif %}{% raw %}
     </div>
     <div class="drawer__footer drawer__footer--fixed appear-animation appear-delay-{{lastAnimationRow}}">
-      <div class="grid grid--full">
-        {% endraw %}
-        {% assign value = 7500 | minus: cart.total_price %}
-        {% if value > 0 %}
-          {% assign percentage = 7500 | minus: cart.total_price | divided_by: 7500.0 | times: 100 %}
-          <h3 id="shippng_note">You Are {{ value | money}} Away from FREE SHIPPING.</h3>
-          
-          <div class="grid grid--full cart__row--table">
-              <progress id="shipping_progress" value="{{percentage}}" max="100" style="width:75%;"></progress>
-              <img src="{{ 'shipping-free.png' | asset_img_url: }}" style="margin-left: 10px;" />
-          </div>
-        {% else %}
-          <h3 id="shippng_note">Awesome. You've got free shipping!</h3>
-          <div class="grid grid--full cart__row--table">
-              <progress id="shipping_progress" value="100" max="100" style="width:75%;"></progress>
-              <img src="{{ 'shipping-free.png' | asset_img_url: }}" style="margin-left: 10px;" />
-          </div>
-        {% endif %}
-        {% raw %}
-      </div>
+      
+        
+      
       <div class="grid grid--full">
         <div class="grid__item two-thirds">
           <p class="ajaxcart__subtotal">{% endraw %}{{ 'cart.general.subtotal' | t }}{% raw %}</p>
@@ -132,7 +115,8 @@
 {% endraw %}
 </script>
 <script>
-  $(".change-item").change(function(){
-    alert();
-  });
+  function myCuopon() {
+    var coupon = $("#custom-coupon").val();
+    window.location.href = "/checkout/?discount=" + coupon;
+  }
 </script>
