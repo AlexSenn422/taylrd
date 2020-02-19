@@ -557,6 +557,7 @@ lazySizesConfig.expFactor = 4;
       },
   
       _updateMasterSelect: function(variant) {
+        console.log(variant.id);
         $(this.originalSelectorId, this.$container).val(variant.id);
       },
   
@@ -1238,6 +1239,8 @@ lazySizesConfig.expFactor = 4;
   
           animation_row+=2;
           
+          
+
           data = {
             items: items,
             note: cart.note,
@@ -1247,7 +1250,14 @@ lazySizesConfig.expFactor = 4;
           };
   
           $(selectors.container).append(this.template(data));
-          
+          let diff_value = 7500 - cart.total_price;
+          if(diff_value > 0) {
+            $('#shippng_note').html("You Are " + theme.Currency.formatMoney(diff_value, theme.settings.moneyFormat) + " Away from FREE SHIPPING.");
+            $('#shipping_progress').val(100 - (diff_value/7500)*100);
+          } else {
+            $('#shippng_note').text("Awesome. You've got free shipping!");
+            $('#shipping_progress').val(100);
+          }
         }
   
         this.status.loaded = true;

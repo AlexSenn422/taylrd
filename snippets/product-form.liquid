@@ -1,5 +1,3 @@
-
-
 <div class="swatch-hack">
     <label class="variant__label">COLOR</label>
 {% assign type = product.type | handle %}
@@ -216,21 +214,26 @@
   </div>
 {% endform %}
 
-<script>
+<script >
+  $(".product-single__form fieldset").each(function(){
+    let fieldName = $(this).attr('name');
+    let id = $(this).attr('id');
+    let preValue = localStorage.getItem(fieldName);
+    $("input:radio[name='" + fieldName + "']").filter("[value='" + preValue + "']").click();
+    console.log(preValue);
+  });
+
   $(window).load(function(){
     $(".product-single__form fieldset").each(function(){
       let fieldName = $(this).attr('name');
       let id = $(this).attr('id');
       let preValue = localStorage.getItem(fieldName);
+      $("input:radio[name='" + fieldName + "']").filter("[value='" + preValue + "']").prop('checked', false);
       $("input:radio[name='" + fieldName + "']").filter("[value='" + preValue + "']").click();
       console.log(preValue);
-      // var value = $("#" + id + " :radio:checked").val();
-      // console.log(value);
     });
   });
-//   $.getJSON("https://api.ipify.org/?format=json", function(e) {
-//     console.log(e.ip);
-// });
+  
   $(".product-single__form fieldset").change(function(){
     let fieldName = $(this).attr('name');
     let id = $(this).attr('id');

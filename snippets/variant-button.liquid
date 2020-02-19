@@ -2,6 +2,14 @@
 {%- assign is_color = false -%}
 {%- assign color_swatch_drop = option_drop -%}
 {%- assign color_option_index = 0 -%}
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+  -%}
+  {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+  {%- assign parts = pageQuerystring | split:'&' -%}
 
 {% if settings.product_color_swatches %}
   {% for option in product.options_with_values %}
@@ -43,8 +51,17 @@
           {% endunless %}
         {% endunless %}
       {% endif %}
+      {%- comment -%}
+      {%- assign optionName = option.name | replace: ' ', '_' -%}
+      {%- for part in parts -%}
+        {%- assign keyAndValue = part | split:'=' -%}
+        {%- assign checkKey = keyAndValue | first -%}
+        {%- assign checkValue = keyAndValue | last -%}
+      {%- endfor -%}
+      {%- endcomment -%}
+      
       <input type="radio"
-        {% if option.selected_value == value %} checked="checked"{% endif %}
+        {% if value == 29 %} checked="checked"{% endif %}
         {% unless variant_label_state %} disabled="disabled"{% endunless %}
         value="{{ value | escape }}"
         data-index="option{{ option_index }}"

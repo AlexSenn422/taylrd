@@ -82,6 +82,8 @@
     "cart_type": "drawer",
     "cart_additional_buttons": false,
     "cart_notes_enable": false,
+    "shipping_bar_enable": false,
+    "coupon_enable": true,
     "cart_terms_conditions_enable": false,
     "cart_terms_conditions_link": "",
     "enable_currencies": true,
@@ -157,7 +159,7 @@
           "1524770292306": {
             "type": "announcement",
             "settings": {
-              "text": "Free Standard Shipping Over $75 | Free Express Shipping Over $150",
+              "text": "Free 2-Day Shipping at $100 | Free Express Shipping Over $150",
               "link_text": "Shop All",
               "link": "shopify:\/\/collections\/shop-all"
             }
@@ -491,6 +493,23 @@
       "1524769873765": {
         "type": "slideshow",
         "blocks": {
+          "1580233861518": {
+            "type": "image",
+            "settings": {
+              "top_subheading": "",
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link": "shopify:\/\/collections\/final-sale",
+              "link_text": "",
+              "link_2": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/web_banner_b0666bfb-bf18-457f-bc36-118bea5fd1f8.jpg",
+              "focal_point": "center center"
+            }
+          },
           "1557183205246": {
             "type": "image",
             "settings": {
@@ -507,27 +526,10 @@
               "image": "shopify:\/\/shop_images\/Hero_Tech.jpg",
               "focal_point": "20% 50%"
             }
-          },
-          "1581661804614": {
-            "type": "image",
-            "settings": {
-              "top_subheading": "",
-              "title": "",
-              "title_size": 80,
-              "subheading": "",
-              "link": "shopify:\/\/collections\/final-sale",
-              "link_text": "",
-              "link_2": "",
-              "link_text_2": "",
-              "color_accent": "rgba(0,0,0,0)",
-              "text_align": "vertical-center horizontal-center",
-              "image": "shopify:\/\/shop_images\/Inventory_Close_Out_web_banner_1.jpg",
-              "focal_point": "center center"
-            }
           }
         },
         "block_order": [
-          "1581661804614",
+          "1580233861518",
           "1557183205246"
         ],
         "settings": {
@@ -661,14 +663,14 @@
       "collection-promotions": {
         "type": "collection-promotions",
         "blocks": {
-          "1581661982287": {
+          "1580234470689": {
             "type": "banner",
             "settings": {
               "promo_collection": "",
-              "heading": "EXTRA 70% OFF FINAL SALE",
-              "text": "CODE: 70off",
+              "heading": "Extra 60% Off Final Sale",
+              "text": "Use Code: \"WINTER\"",
               "link": "shopify:\/\/collections\/final-sale",
-              "label": "Shop now",
+              "label": "See Final Sale",
               "image": "",
               "color_tint": "#000",
               "color_tint_opacity": 8,
@@ -677,10 +679,10 @@
           }
         },
         "block_order": [
-          "1581661982287"
+          "1580234470689"
         ],
         "settings": {
-          "gutter_size": 7
+          "gutter_size": 20
         }
       },
       "footer-promotions": {
@@ -2490,6 +2492,110 @@
           "layout": "left",
           "divider": false
         }
+      },
+      "custom-accordion": {
+        "type": "custom-accordion",
+        "blocks": {
+          "1581611578087": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "How can I track my order?",
+              "accordion_content": "<p>After your order has been placed, you will first receive an order confirmation email, followed by a shipment notification email with tracking information. To check the delivery status of your order, use the tracking number provided in the email. If you are experiencing any trouble, please contact us by live chat or at support@taylrdclothing.com with your questions.<\/p>"
+            }
+          },
+          "1581611610851": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "Do you ship to my country?",
+              "accordion_content": "<p>We currently ship to the following countries:<\/p>\n<p>United States, Canada, Germany, Australia, Japan, Mexico, New Zealand, United Kingdom, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, & Sweden.<\/p>"
+            }
+          },
+          "1581611613799": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "How long does it take my shipment to arrive?",
+              "accordion_content": "<p>Region | Time In Transit (Business Days)<\/p>\n<p>United States | 3-5<br>Canada | 3-10<br>Australia | 8-10<br>New Zealand | 8-10<br>United Kingdom | 4-10<br>European Union | 5-10<\/p>"
+            }
+          },
+          "1581611879815": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "Will I have to pay any duties or taxes on top of my order?",
+              "accordion_content": "<p>The goods will be imported on behalf of the consignee\/ebuyer. The consignee authorizes the (TAYLRD LLC.) to import the goods on his behalf. Further, the consignee\/buyer agrees that (TAYLRD LLC.) may delegate the obligation to import the goods on his behalf to a subcontractor (e.g. customs broker). The consignee will pay the taxes & duties in addition to the purchase price of the goods.<\/p>"
+            }
+          },
+          "1581611902855": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "What size should I purchase?",
+              "accordion_content": "<p>We have size and fit guides available on product pages which should assist you in finding the right product. If you have any further questions or concerns, please do not hesitate to reach out to us through live chat or by emailing us at support@taylrdclothing.com.<\/p>"
+            }
+          },
+          "1581611911405": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "What is the best way to talk to somebody at TAYLRD?",
+              "accordion_content": "<p>Emailing us at support@taylrdclothing.com is the best way to reach us. Please provide as much detail as possible in your email so we can assist you. <\/p>"
+            }
+          },
+          "1581611927322": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "Who is your shipping partner?",
+              "accordion_content": "<p>We make use of multiple shipping partners. Our shipping service is through DHL\/USPS. In addition to our website, you can track your package on the carrier's website.<\/p>"
+            }
+          },
+          "1581611947487": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "What is your returns and refund policy?",
+              "accordion_content": "<p>If a purchased item is unworn, unwashed, unaltered (with tags\/labels still attached) and still in it's original packaging; you may return the item(s) within 30 days of the date of purchase for a full refund or store credit.<\/p>\n<p>Any item(s) marked 'Final Sale' are not eligible for return or exchange.<\/p>\n<p>To complete a return, we require a receipt or proof of purchase. Please use our Returns Portal to complete your return.<\/p>\n<p>Returns Portal:<span> <\/span><a href=\"https:\/\/returns.taylrdclothing.com\/#\/\">https:\/\/returns.taylrdclothing.com<\/a><\/p>\n<p>To complete your return, we require the order number (starting with \"TC\") with which you made the original order.  Our returns portal provides simple instructions on how to create a pre-paid return label which can be applied to the original packaging.<\/p>\n<p>Refunds (if applicable):<span> <\/span><br>Any unworn, unwashed, and undamaged items received within 30 days will be refunded at the original purchase amount and in the original form of payment. Please allow 5-7 Business Days after we receive items to process your return.<\/p>\n<p>You will receive an email confirmation once we have processed your return. If your order is only applicable for store credit, that credit amount will be available as soon as your return is received and processed.<\/p>\n<p>Late or Missing Refunds:<span> <\/span><br>If you haven’t received a refund yet, first check your bank account again.<span> <\/span><br>Then contact your credit card company, it may take some time before your refund is officially posted. Next contact your bank. There is often some processing time before a refund is posted. If you’ve done all of this and you still have not received your refund yet, please contact us at support@taylrdclothing.com.<\/p>\n<p>Damaged Items<span> <\/span><br>If for some reason, your item is damaged, send us an email at support@taylrdclothing.com, and we will get resolved for you.<\/p>"
+            }
+          },
+          "1581611968564": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "You’re out of a particular size or color that I like; can I be notified when it arrives?",
+              "accordion_content": "<p>Yes. Under every product page there is an option to be updated when we have a restock. Simply select the text \"Not in Stock? Get An Update\" and provide the item you would like and your email address. We will email you where the item is available.<\/p>"
+            }
+          },
+          "1581611989780": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "What are the washing instructions?",
+              "accordion_content": "<p>Each product has an inside label with detailed washing instructions. Please pay careful attention to these instructions as they are specifically written to ensure lasting quality of your TAYLRD clothing. For most of our products made from cotton, the washing instructions are straightforward: wash with like colors in cold water and tumble dry on low, or air dry. Certain products may require more specific care - check the label inside first before washing! As long as the prescribed care instructions for each item are followed, your TAYLRD clothing should maintain their great shape and fit after many wash-cycles.<\/p>"
+            }
+          },
+          "1581612000076": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "Where are your products made?",
+              "accordion_content": "<p>We currently produce our products in USA, Sri Lanka, and China. <\/p>"
+            }
+          },
+          "1581612017821": {
+            "type": "text",
+            "settings": {
+              "accordion_title": "Size guide?",
+              "accordion_content": "<table width=\"100%\">\n<tbody>\n<tr>\n<td>\n<p><strong>Men's Body Measurements<\/strong><\/p>\n<\/td>\n<td>S<\/td>\n<td>M<\/td>\n<td>L<\/td>\n<td> XL<\/td>\n<\/tr>\n<tr>\n<td>Neck Circumference<\/td>\n<td>14.50<\/td>\n<td>15.50<\/td>\n<td>16.50<\/td>\n<td>17.50<\/td>\n<\/tr>\n<tr>\n<td>Chest<\/td>\n<td>38.50<\/td>\n<td>40.50<\/td>\n<td>43.50<\/td>\n<td>46.50<\/td>\n<\/tr>\n<tr>\n<td>Waist<\/td>\n<td>31.50<\/td>\n<td>33.50<\/td>\n<td>36.50<\/td>\n<td>39.50<\/td>\n<\/tr>\n<tr>\n<td>Inseam<\/td>\n<td>30\/32<\/td>\n<td>30\/32<\/td>\n<td>30\/32<\/td>\n<td>30\/32<\/td>\n<\/tr>\n<tr>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<\/tr>\n<tr>\n<td><strong>Men's Woven Shirts<\/strong><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<\/tr>\n<tr>\n<td>\n<p><strong>Long Sleeve Standard Fit<\/strong><\/p>\n<\/td>\n<td>S<\/td>\n<td>M<\/td>\n<td>L<\/td>\n<td>XL<\/td>\n<\/tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"><\/div>\n<p><span>Neck Circumference<\/span><\/p>\n<\/td>\n<td>15.75<\/td>\n<td>16.75<\/td>\n<td>17.75<\/td>\n<td>18.75<\/td>\n<\/tr>\n<tr>\n<td>\n<p><span>Chest<\/span><\/p>\n<\/td>\n<td>42.50<\/td>\n<td>44.50<\/td>\n<td>47.50<\/td>\n<td>50.50<\/td>\n<\/tr>\n<tr>\n<td>\n<p><span>Bottom Opening <\/span><\/p>\n<\/td>\n<td>41.00<\/td>\n<td>43.00<\/td>\n<td>46.00<\/td>\n<td>49.00<\/td>\n<\/tr>\n<tr>\n<td>\n<p><span>Sleeve Length From Mid of Neck<\/span><\/p>\n<\/td>\n<td>34.25<\/td>\n<td>35.00<\/td>\n<td>36.00<\/td>\n<td>37.00<\/td>\n<\/tr>\n<tr>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<\/tr>\n<tr>\n<td><strong>Long Sleeve Slim Fit<\/strong><\/td>\n<td>S<\/td>\n<td>M<\/td>\n<td>L<\/td>\n<td>XL<\/td>\n<\/tr>\n<tr>\n<td>Neck Circumference<\/td>\n<td>15.75<\/td>\n<td>16.75<\/td>\n<td>17.75<\/td>\n<td>18.75<\/td>\n<\/tr>\n<tr>\n<td>Chest<\/td>\n<td>41.50<\/td>\n<td>43.50<\/td>\n<td>46.50<\/td>\n<td>49.50<\/td>\n<\/tr>\n<tr>\n<td>Bottom Opening<\/td>\n<td>40.75<\/td>\n<td>42.75<\/td>\n<td>45.75<\/td>\n<td>48.75<\/td>\n<\/tr>\n<tr>\n<td>Sleeve Length from Mid of Neck<\/td>\n<td>34.25<\/td>\n<td>35.00<\/td>\n<td>36.00<\/td>\n<td>37.00<\/td>\n<\/tr>\n<tr>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<\/tr>\n<tr>\n<td><strong>Short Sleeve Standard Fit<\/strong><\/td>\n<td>S<\/td>\n<td>M<\/td>\n<td>L<\/td>\n<td>XL<\/td>\n<\/tr>\n<tr>\n<td>Neck Circumference<\/td>\n<td>15.75<\/td>\n<td>16.75<\/td>\n<td>17.75<\/td>\n<td>18.75<\/td>\n<\/tr>\n<tr>\n<td>Chest<\/td>\n<td>41.00<\/td>\n<td>43.00<\/td>\n<td>46.00<\/td>\n<td>49.00<\/td>\n<\/tr>\n<tr>\n<td>Bottom Opening<\/td>\n<td>40.50<\/td>\n<td>42.50<\/td>\n<td>45.50<\/td>\n<td>48.50<\/td>\n<\/tr>\n<tr>\n<td>Sleeve Length from Mid of Neck<\/td>\n<td>8.13<\/td>\n<td>8.50<\/td>\n<td>9.00<\/td>\n<td>9.50<\/td>\n<\/tr>\n<tr>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<td><\/td>\n<\/tr>\n<tr>\n<td><strong>Short Sleeve Slim Fit<\/strong><\/td>\n<td>S<\/td>\n<td>M<\/td>\n<td>L<\/td>\n<td>XL<\/td>\n<\/tr>\n<tr>\n<td>Neck Circumference<\/td>\n<td>15.75<\/td>\n<td>16.75<\/td>\n<td>17.75<\/td>\n<td>18.75<\/td>\n<\/tr>\n<tr>\n<td>Chest<\/td>\n<td>40.00<\/td>\n<td>42.00<\/td>\n<td>45.00<\/td>\n<td>48.00<\/td>\n<\/tr>\n<tr>\n<td>Bottom Opening<\/td>\n<td>40.00<\/td>\n<td>42.00<\/td>\n<td>45.00<\/td>\n<td>48.00<\/td>\n<\/tr>\n<tr>\n<td>Sleeve Length from Mid of Neck<\/td>\n<td>8.25<\/td>\n<td>8.50<\/td>\n<td>9.00<\/td>\n<td>9.50<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<p> <\/p>\n<table style=\"width: 702px;\">\n<tbody>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\"><strong>Men's Chino Pant<\/strong><\/td>\n<td style=\"width: 43.3333px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\"><strong>Standard Fit <\/strong><\/td>\n<td style=\"width: 43.3333px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\">Waist Size:<\/td>\n<td style=\"width: 43.3333px; height: 25px;\">29<\/td>\n<td style=\"width: 44px; height: 25px;\">30<\/td>\n<td style=\"width: 44px; height: 25px;\">31<\/td>\n<td style=\"width: 44px; height: 25px;\">32<\/td>\n<td style=\"width: 44px; height: 25px;\">33<\/td>\n<td style=\"width: 44px; height: 25px;\">34<\/td>\n<td style=\"width: 44px; height: 25px;\">35<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">36<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">38<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">40<\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\">Front Rise:<\/td>\n<td style=\"width: 43.3333px; height: 25px;\">8.00<\/td>\n<td style=\"width: 44px; height: 25px;\">8.25<\/td>\n<td style=\"width: 44px; height: 25px;\">8.50<\/td>\n<td style=\"width: 44px; height: 25px;\">8.75<\/td>\n<td style=\"width: 44px; height: 25px;\">9.00<\/td>\n<td style=\"width: 44px; height: 25px;\">9.25<\/td>\n<td style=\"width: 44px; height: 25px;\">9.50<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">9.75<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">10.00<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">10.25<\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\">Leg Opening:<\/td>\n<td style=\"width: 43.3333px; height: 25px;\">15.50<\/td>\n<td style=\"width: 44px; height: 25px;\">15.75<\/td>\n<td style=\"width: 44px; height: 25px;\">16.00<\/td>\n<td style=\"width: 44px; height: 25px;\">16.25<\/td>\n<td style=\"width: 44px; height: 25px;\">16.50<\/td>\n<td style=\"width: 44px; height: 25px;\">16.75<\/td>\n<td style=\"width: 44px; height: 25px;\">17.00<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">17.25<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">17.50<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">17.75<\/td>\n<\/tr>\n<tr style=\"height: 1.33334px;\">\n<td style=\"width: 191.333px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 43.3333px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 1.33334px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 1.33334px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\"><strong>Slim Fit<\/strong><\/td>\n<td style=\"width: 43.3333px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\">Waist Size:<\/td>\n<td style=\"width: 43.3333px; height: 25px;\">29<\/td>\n<td style=\"width: 44px; height: 25px;\">30<\/td>\n<td style=\"width: 44px; height: 25px;\">31<\/td>\n<td style=\"width: 44px; height: 25px;\">32<\/td>\n<td style=\"width: 44px; height: 25px;\">33<\/td>\n<td style=\"width: 44px; height: 25px;\">34<\/td>\n<td style=\"width: 44px; height: 25px;\">35<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">36<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">38<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">40<\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\">Front Rise:<\/td>\n<td style=\"width: 43.3333px; height: 25px;\">8.00<\/td>\n<td style=\"width: 44px; height: 25px;\">8.25<\/td>\n<td style=\"width: 44px; height: 25px;\">8.50<\/td>\n<td style=\"width: 44px; height: 25px;\">8.75<\/td>\n<td style=\"width: 44px; height: 25px;\">9.00<\/td>\n<td style=\"width: 44px; height: 25px;\">9.25<\/td>\n<td style=\"width: 44px; height: 25px;\">9.50<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">9.75<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">10.00<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">10.25<\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\">Leg Opening:<\/td>\n<td style=\"width: 43.3333px; height: 25px;\">14.25<\/td>\n<td style=\"width: 44px; height: 25px;\">14.50<\/td>\n<td style=\"width: 44px; height: 25px;\">14.75<\/td>\n<td style=\"width: 44px; height: 25px;\">15.00<\/td>\n<td style=\"width: 44px; height: 25px;\">15.25<\/td>\n<td style=\"width: 44px; height: 25px;\">15.50<\/td>\n<td style=\"width: 44px; height: 25px;\">15.75<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">16.00<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">16.25<\/td>\n<td style=\"width: 44.6667px; height: 25px;\">16.50<\/td>\n<\/tr>\n<tr style=\"height: 25px;\">\n<td style=\"width: 191.333px; height: 25px;\"> <\/td>\n<td style=\"width: 43.3333px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 25px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\"><strong>Fitted Fit<\/strong><\/td>\n<td style=\"width: 43.3333px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\">Waist Size:<\/td>\n<td style=\"width: 43.3333px; height: 26px;\">29<\/td>\n<td style=\"width: 44px; height: 26px;\">30<\/td>\n<td style=\"width: 44px; height: 26px;\">31<\/td>\n<td style=\"width: 44px; height: 26px;\">32<\/td>\n<td style=\"width: 44px; height: 26px;\">33<\/td>\n<td style=\"width: 44px; height: 26px;\">34<\/td>\n<td style=\"width: 44px; height: 26px;\">35<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">36<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">38<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">40<\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\">Front Rise:<\/td>\n<td style=\"width: 43.3333px; height: 26px;\">7.75<\/td>\n<td style=\"width: 44px; height: 26px;\">8.00<\/td>\n<td style=\"width: 44px; height: 26px;\">8.25<\/td>\n<td style=\"width: 44px; height: 26px;\">8.50<\/td>\n<td style=\"width: 44px; height: 26px;\">8.75<\/td>\n<td style=\"width: 44px; height: 26px;\">9.00<\/td>\n<td style=\"width: 44px; height: 26px;\">9.25<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">9.50<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">9.75<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">10.00<\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\">Leg Opening:<\/td>\n<td style=\"width: 43.3333px; height: 26px;\">13.25<\/td>\n<td style=\"width: 44px; height: 26px;\">13.50<\/td>\n<td style=\"width: 44px; height: 26px;\">13.75<\/td>\n<td style=\"width: 44px; height: 26px;\">14.00<\/td>\n<td style=\"width: 44px; height: 26px;\">14.25<\/td>\n<td style=\"width: 44px; height: 26px;\">14.50<\/td>\n<td style=\"width: 44px; height: 26px;\">14.75<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">15.00<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">15.25<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">15.50<\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\"><\/td>\n<td style=\"width: 43.3333px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\"><strong>Men's Chino Short<\/strong><\/td>\n<td style=\"width: 43.3333px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\">Waist Size:<\/td>\n<td style=\"width: 43.3333px; height: 26px;\">29<\/td>\n<td style=\"width: 44px; height: 26px;\">30<\/td>\n<td style=\"width: 44px; height: 26px;\">31<\/td>\n<td style=\"width: 44px; height: 26px;\">32<\/td>\n<td style=\"width: 44px; height: 26px;\">33<\/td>\n<td style=\"width: 44px; height: 26px;\">34<\/td>\n<td style=\"width: 44px; height: 26px;\">35<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">36<\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\">Front Rise:<\/td>\n<td style=\"width: 43.3333px; height: 26px;\">8.25<\/td>\n<td style=\"width: 44px; height: 26px;\">8.50<\/td>\n<td style=\"width: 44px; height: 26px;\">8.75<\/td>\n<td style=\"width: 44px; height: 26px;\">9.00<\/td>\n<td style=\"width: 44px; height: 26px;\">9.25<\/td>\n<td style=\"width: 44px; height: 26px;\">9.50<\/td>\n<td style=\"width: 44px; height: 26px;\">9.75<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">10.00<\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<\/tr>\n<tr style=\"height: 26px;\">\n<td style=\"width: 191.333px; height: 26px;\">Leg Opening:<\/td>\n<td style=\"width: 43.3333px; height: 26px;\">20.25<\/td>\n<td style=\"width: 44px; height: 26px;\">20.50<\/td>\n<td style=\"width: 44px; height: 26px;\">20.75<\/td>\n<td style=\"width: 44px; height: 26px;\">21.00<\/td>\n<td style=\"width: 44px; height: 26px;\">21.25<\/td>\n<td style=\"width: 44px; height: 26px;\">21.50<\/td>\n<td style=\"width: 44px; height: 26px;\">21.75<\/td>\n<td style=\"width: 44.6667px; height: 26px;\">22.00<\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<td style=\"width: 44.6667px; height: 26px;\"> <\/td>\n<\/tr>\n<\/tbody>\n<\/table>"
+            }
+          }
+        },
+        "block_order": [
+          "1581611578087",
+          "1581611610851",
+          "1581611613799",
+          "1581611879815",
+          "1581611902855",
+          "1581611911405",
+          "1581611927322",
+          "1581611947487",
+          "1581611968564",
+          "1581611989780",
+          "1581612000076",
+          "1581612017821"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -2578,6 +2684,8 @@
       "collection_grid_gutter": true,
       "cart_type": "drawer",
       "cart_notes_enable": false,
+      "shipping_bar_enable": false,
+      "coupon_enable": false,
       "cart_terms_conditions_enable": false,
       "currency_format": "money_format",
       "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
@@ -3167,6 +3275,8 @@
       "collection_grid_gutter": true,
       "cart_type": "drawer",
       "cart_notes_enable": false,
+      "shipping_bar_enable": false,
+      "coupon_enable": false,
       "cart_terms_conditions_enable": false,
       "currency_format": "money_format",
       "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
@@ -3834,6 +3944,8 @@
       "collection_grid_gutter": true,
       "cart_type": "drawer",
       "cart_notes_enable": false,
+      "shipping_bar_enable": false,
+      "coupon_enable": false,
       "cart_terms_conditions_enable": false,
       "currency_format": "money_format",
       "supported_currencies": "USD CAD INR GBP AUD EUR JPY",

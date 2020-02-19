@@ -942,6 +942,16 @@
       },
       {
         "type": "checkbox",
+        "id": "shipping_bar_enable",
+        "label": "Enable Shipping bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "coupon_enable",
+        "label": "Enable Coupon Code"
+      },
+      {
+        "type": "checkbox",
         "id": "cart_terms_conditions_enable",
         "label": "Enable terms and conditions checkbox"
       },
